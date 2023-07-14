@@ -109,6 +109,11 @@
   color: #666;
 }
 
+.github{
+  display: flex;
+  justify-content: end;
+}
+
 .thumbnail{
   object-fit: contain;
   position: relative !important;
