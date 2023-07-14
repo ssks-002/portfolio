@@ -1,1 +1,1 @@
-MicroCMS+Next.js+Vercel
+Configured with MicroCMS+Next.js+Vercel
