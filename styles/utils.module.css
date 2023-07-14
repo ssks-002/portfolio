@@ -69,13 +69,13 @@
 .headingLg::after {
   background-color: black; 
   content: "";
-  height: 1px; 
+  height: .1px; 
   width: 100%;
   margin: auto;
 }
 
 .headingLg::after {
-  margin-left: 15px; /* 文字との余白 */
+  margin-left: 15px;
 }
 
 .headingMd {
@@ -110,9 +110,13 @@
 }
 
 .github{
+  border-top: solid black 1px;
+  margin-top: 20px;
+  padding: 20px;
   display: flex;
   justify-content: end;
 }
+
 
 .thumbnail{
   object-fit: contain;
