@@ -8,6 +8,7 @@ body {
   font-size: 18px;
 }
 
+
 * {
   box-sizing: border-box;
 }
@@ -25,3 +26,4 @@ img {
   max-width: 100%;
   display: block;
 }
+

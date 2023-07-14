@@ -1,3 +1,48 @@
+
+.opendfilter{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  backdrop-filter: blur(3px);
+  animation: filtercoming cubic-bezier(0.2, 0.6, 0.4, 1) 0.3s;
+}
+
+.workdetailarea{
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.workdetailarea_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width:  75%;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
+
 .heading2Xl {
   font-size: 2.5rem;
   line-height: 1.2;
@@ -15,18 +60,27 @@
 }
 
 .headingLg {
+  display: flex;
   font-size: 1.5rem;
   line-height: 1.4;
   margin: 1rem 0;
 }
 
+.headingLg::after {
+  background-color: black; 
+  content: "";
+  height: 1px; 
+  width: 100%;
+  margin: auto;
+}
+
+.headingLg::after {
+  margin-left: 15px; /* 文字との余白 */
+}
+
 .headingMd {
   font-size: 1.2rem;
   line-height: 1.5;
-}
-
-.borderCircle {
-  border-radius: 9999px;
 }
 
 .colorInherit {
@@ -41,6 +95,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  gap: 15px;
 }
 
 .listItem {
@@ -49,4 +107,97 @@
 
 .lightText {
   color: #666;
+}
+
+.thumbnail{
+  object-fit: contain;
+  position: relative !important;
+  height: auto !important;
+  max-height: 500px;
+}
+
+.thumbnail_container{
+  position: relative;
+  cursor: pointer;
+  max-height: 500px;
+}
+
+.overlay .title{
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.overlay:hover .title {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fcba03;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.overlay:hover::before {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.workdetail_container{
+  width: 50%;
+  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, .3);
+  animation-name:fadeInAnime;
+  animation-duration: .3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+
+  @keyframes fadeInAnime{
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+}
+
+.workdetail{
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.workdetail h2{
+  display: flex;
+  justify-content: center;
+}
+
+.workdescription{
+  margin: 10px;
+}
+
+.workdownload{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: medium;
+  gap: 10px;
+}
+
+.workdownload svg{
+  height: 25px;
 }
