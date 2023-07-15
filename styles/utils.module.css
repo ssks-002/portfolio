@@ -69,7 +69,7 @@
 .headingLg::after {
   background-color: black; 
   content: "";
-  height: .5px; 
+  height: 1px; 
   width: 100%;
   margin: auto;
 }
