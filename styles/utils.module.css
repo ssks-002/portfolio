@@ -172,6 +172,7 @@
   animation-duration: .3s;
   animation-fill-mode:forwards;
   opacity:0;
+  cursor: default;
   }
 
   @keyframes fadeInAnime{
@@ -204,9 +205,13 @@
   justify-content: end;
   align-items: center;
   font-size: medium;
+}
+
+.workdownloadlink{
+  display: flex;
   gap: 10px;
 }
 
-.workdownload svg{
+.workdownloadlink svg{
   height: 25px;
 }
