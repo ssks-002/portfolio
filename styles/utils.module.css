@@ -216,3 +216,8 @@
 .workdownloadlink svg{
   height: 25px;
 }
+
+.andmore{
+  display: flex;
+  justify-content: end;
+}

@@ -40,6 +40,7 @@ export default function Home({ allPostsData }) {
           <PostCard key={PostData.id} PostData={PostData} />
           ))}
         </ul>
+        <h3 className={utilStyles.andmore}>and more</h3>
         <div className={utilStyles.github}>
         <Link href='https://github.com/ssks-002/portfolio' target="_blank" rel="noopener noreferrer" >
           <svg  xmlns="http://www.w3.org/2000/svg" width="40px" viewBox="0 0 100 100">
